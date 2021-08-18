@@ -10,7 +10,8 @@
 
     // the link to your model provided by Teachable Machine export panel
     const URL = "https://teachablemachine.withgoogle.com/models/k46Ptl7LJ/";
-
+  //var snd = new Audio("");
+    //snd.loop = False
     let model, webcam, labelContainer, maxPredictions;
 
     // Load the image model and setup the webcam
@@ -55,5 +56,13 @@
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
+        //if (prediction[n].probability > 0.7) {
+        //beep(); }
+        //else{
+        //beep.stop
     }
+    // function beep() {
+    // snd.play();
+    //}
+    
 </script>
